@@ -1,0 +1,8 @@
+:root {
+    --bs-body-font-family: "Chakra Petch", sans-serif;
+    --bs-bg-body: #0b0e13;
+    --bs-fg-body: #f1f1f1;
+    --bs-body-font-size: 14px;
+    --bs-body-font-weight: var(--bs-font-weight-light);
+}
+
