@@ -1,8 +1,59 @@
 :root {
+    --color-primary: #cbfe1c;
+    --color-dark: #0b0e13;
+    --color-light: #f1f1f1;
+    --font-chakra: "Chakra Petch", sans-serif;
     --bs-body-font-family: "Chakra Petch", sans-serif;
-    --bs-bg-body: #0b0e13;
-    --bs-fg-body: #f1f1f1;
-    --bs-body-font-size: 14px;
-    --bs-body-font-weight: var(--bs-font-weight-light);
+    --bs-body-bg: var(--color-dark);
+    --bs-body-color: var(--color-light);
+    --bs-light-rgb: var(--color-light);
+    --bs-primary-rgb: 203, 254, 28;
+    --bs-body-font-weight: 300;
 }
 
+html {
+    font-size: 14px;
+}
+
+::selection {
+    background-color: var(--color-primary);
+    color: var(--color-dark);
+}
+
+.navbar {
+    --bs-navbar-brand-color: var(--color-primary);
+    --bs-navbar-color: var(--bs-body-color);
+    --bs-navbar-brand-hover-color: var(--color-primary);
+    --bs-border-color: #1e2939;
+    --bs-navbar-active-color: var(--color-primary);
+}
+
+.navbar button i {
+    font-size: 1.125rem;
+}
+
+.navbar button:not(:last-child) {
+    background-color: var(--color-dark);
+    margin-bottom: 0.75rem;
+}
+
+.navbar button i:hover {
+    color: var(--color-primary);
+}
+
+.navbar .buttons {
+    border-top: 1px solid var(--bs-border-color);
+}
+
+.navbar-nav {
+    --bs-nav-link-hover-color: var(--color-primary);
+}
+
+.navbar-toggler:hover {
+    box-shadow: none;
+    color: var(--color-primary);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
