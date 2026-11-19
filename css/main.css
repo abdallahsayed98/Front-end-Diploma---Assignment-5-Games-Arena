@@ -2,6 +2,7 @@
     --color-primary: #cbfe1c;
     --color-dark: #0b0e13;
     --color-light: #f1f1f1;
+    --color-black: #0A0D12;
     --font-chakra: "Chakra Petch", sans-serif;
     --bs-body-font-family: "Chakra Petch", sans-serif;
     --bs-body-bg: var(--color-dark);
@@ -20,6 +21,55 @@ html {
     color: var(--color-dark);
 }
 
+.gap-2\.5 {
+    gap: .75rem;
+}
+
+.gap-4\.5 {
+    gap: 2rem;
+}
+
+.mt-4\.5 {
+    margin-top: 2rem;
+}
+
+.mb-4\.5 {
+    margin-bottom: 2rem;
+}
+
+.pt-6 {
+    padding-top: 7.5rem;
+}
+
+.pb-5\.5 {
+    padding-bottom: 4rem;
+}
+
+.h-64 {
+    height: 16rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Days One", sans-serif;
+}
+
+.bg-black {
+    background-color: var(--color-dark);
+}
+
+.opacity-88 {
+    opacity: 88%;
+}
+
+.fs-7 {
+    font-size: .875rem;
+}
+
 .navbar {
     --bs-navbar-brand-color: var(--color-primary);
     --bs-navbar-color: var(--bs-body-color);
@@ -28,12 +78,48 @@ html {
     --bs-navbar-active-color: var(--color-primary);
 }
 
+.btn {
+    --bs-btn-padding-x: 1.5rem;
+    --bs-btn-padding-y: 0.75rem;
+    --bs-border-width: 2px
+}
+
+.btn-primary {
+    --bs-btn-color: var(--color-dark);
+    --bs-btn-bg: var(--color-primary);
+    --bs-btn-border-color: var(--color-primary);
+    --bs-btn-hover-color: var(--color-dark);
+    --bs-btn-hover-bg: var(--color-primary);
+    --bs-btn-hover-border-color: var(--color-primary);
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: var(--color-dark);
+    --bs-btn-active-bg: var(--color-primary);
+    --bs-btn-active-border-color: var(--color-primary);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.btn-outline-primary {
+    --bs-btn-color: var(--color-primary);
+    --bs-btn-border-color: var(--color-primary);
+    --bs-btn-hover-color: var(--color-dark);
+    --bs-btn-hover-bg: var(--color-primary);
+    --bs-btn-hover-border-color: var(--color-primary);
+    --bs-btn-focus-shadow-rgb: 13, 110, 253;
+    --bs-btn-active-color: var(--color-dark);
+    --bs-btn-active-bg: var(--color-primary);
+    --bs-btn-active-border-color: var(--color-primary);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--color-primary);
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: var(--color-primary);
+    --bs-gradient: none;
+}
+
 .navbar button i {
     font-size: 1.125rem;
 }
 
 .navbar button:not(:last-child) {
-    background-color: var(--color-dark);
     margin-bottom: 0.75rem;
 }
 
@@ -56,4 +142,18 @@ html {
 
 .navbar-toggler:focus {
     box-shadow: none;
+}
+
+#hero h1 {
+    font-size: 2.25rem;
+}
+
+#hero p {
+    color: #d1d5dc;
+}
+
+.activ-panel {
+    --bs-border-color: #364153;
+    left: -1.5rem;
+    bottom: -1.5rem;
 }
