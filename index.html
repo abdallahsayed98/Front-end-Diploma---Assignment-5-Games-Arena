@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <header class="fixed-top">
+    <header class="fixed-top bg-black z-3">
         <nav class="navbar navbar-expand-lg p-0 border-bottom">
             <div class="container-fluid container-lg mx-auto px-4 py-3">
                 <!-- <div class="w-100 d-flex justify-content-between align-content-center px-4 py-3 border-bottom"> -->
@@ -28,15 +28,15 @@
                     <i class="fa-solid fa-gamepad me-2"></i>
                     GameArena
                 </a>
-                <button class="navbar-toggler border-0 mb-0" type="button" data-bs-toggle="collapse" data-bs-target="#nav"
-                    aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler border-0 mb-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa-solid fa-bars fs-2 mr-2"></i>
                 </button>
                 <!-- </div> -->
                 <div class="collapse navbar-collapse py-3 py-lg-0" id="nav">
                     <ul class="navbar-nav me-auto mb-lg-0">
                         <li class="nav-item py-2 mb-3 me-lg-4 py-lg-0 mb-lg-0">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#hero">Home</a>
                         </li>
                         <li class="nav-item py-2 mb-3 me-lg-4 py-lg-0 mb-lg-0">
                             <a class="nav-link" href="#">OUR GAMES</a>
@@ -46,7 +46,7 @@
                         </li>
                         <li class="nav-item py-2 mb-3 me-lg-4 py-lg-0 mb-lg-0">
                             <a class="nav-link" href="#">Our Team</a>
-                        </li>   
+                        </li>
                         <li class="nav-item py-2 mb-3 me-lg-4 py-lg-0 mb-lg-0">
                             <a class="nav-link" href="#">Tournaments</a>
                         </li>
@@ -55,20 +55,67 @@
                         </li>
                     </ul>
                     <div class="buttons d-flex flex-column flex-lg-row pt-3 pt-lg-0">
-                        <button class="text-start text-light border-0 py-3 p-lg-0 mb-lg-0 me-lg-3">
+                        <button class="text-start text-light border-0 bg-black py-3 p-lg-0 mb-lg-0 me-lg-3">
                             <i class="fa-regular fa-bell me-1 me-lg-0"></i>
                             <span class="d-lg-none">Notifications</span>
                         </button>
-                        <button class="text-start text-light border-0 py-3 p-lg-0 mb-lg-0 me-lg-3">
+                        <button class="text-start text-light border-0 bg-black py-3 p-lg-0 mb-lg-0 me-lg-3">
                             <i class="fa-regular fa-message me-1 me-lg-0"></i>
                             <span class="d-lg-none">Messages</span>
                         </button>
-                        <button class="border-0 bg-primary rounded-3 py-3 py-lg-2 px-lg-3 me-lg-3 fw-bold">Sign In</button>
+                        <button class="border-0 bg-primary rounded-3 py-3 py-lg-2 px-lg-3 me-lg-3 fw-bold">Sign
+                            In</button>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
+    <main>
+        <section id="hero" class="position-relative overflow-hidden text-white d-flex align-items-center min-vh-100 pt-6 pb-5.5">
+            <!-- Background Image -->
+            <img src="images/hero-bg.jpg" alt="Workspace background"
+                class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover z-n1">
+            <!-- Dark Overlay -->
+            <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-88"></div>
+            <div class="container container-lg mx-auto px-3 py-5 py-lg-0 px-lg-4 z-1">
+                <div class="d-flex flex-column flex-lg-row gap-4.5 gap-lg-5 align-items-center">
+                    <div class="text-center text-lg-start">
+                        <h1 class="mb-3 fw-bold">
+                            THE ULTIMATE
+                            <span class="text-primary block">GAMING</span>
+                            EXPERIENCE
+                        </h1>
+                        <p class="fs-7 mb-4.5">Join millions of gamers worldwide in the most competitive eSports tournaments.
+                            Experience
+                            next-level gaming with cutting-edge technology and endless possibilities.</p>
+                        <div
+                            class="d-flex flex-column flex-sm-row gap-2.5 gap-md-3 justify-content-center justify-content-lg-start">
+                            <button class="btn btn-primary fw-bold fs-7 py-lg-3 px-lg-4.5">
+                                Start Gaming Now
+                            </button>
+                            <button class="btn btn-outline-primary fw-bold fs-7 py-lg-3 px-lg-4.5">
+                                Watch Tournaments
+                            </button>
+                        </div>
+                    </div>
+                    <div class="position-relative mt-4.5 mt-lg-0 w-100">
+                        <div class="bg-gradient rounded-4 border border-3 border-primary overflow-hidden">
+                            <img class="object-fit-cover w-100 h-64 h-sm-20 h-md-24" src="images/hero-img.png" alt="hero-img">
+                        </div>
+                        <div class="activ-panel position-absolute bg-black border p-3 p-sm-4 rounded-3 shadow-lg">
+                            <div class="d-flex align-items-center gap-2.5">
+                                <i class="fa-solid fa-trophy fa-lg text-primary"></i>
+                                <div class="d-flex flex-column">
+                                    <p class="fs-6 mb-0">Active Players</p>
+                                    <p class="fs-4 fw-bold mb-0">2.5M+</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 

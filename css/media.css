@@ -1,22 +1,50 @@
 /* sm */
-@media (min-width: 640px) {}
+@media (min-width: 576px) {
+    html {
+        font-size: 15px;
+    }
+
+    .h-sm-20 {
+        height: 20rem;
+    }
+
+    #hero h1 {
+        font-size: 3rem;
+    }
+
+    #hero p {
+        font-size: 1rem;
+    }
+}
 
 /* md */
 @media (min-width: 768px) {
     .navbar .buttons {
         border: none;
     }
+    .h-md-24 {
+        height: 24rem;
+    }
 }
 
 /* lg */
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
     html {
         font-size: 16px;
+    }
+
+    #hero h1 {
+        font-size: 3.75rem;
+    }
+
+    .px-lg-4\.5 {
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 }
 
 /* xl */
-@media (min-width: 1280px) {}
+@media (min-width: 1200px) {}
 
 /* xxl */
-@media (min-width: 1536px) {}
+@media (min-width: 1400px) {}
