@@ -10,6 +10,7 @@
     --bs-light-rgb: var(--color-light);
     --bs-primary-rgb: 203, 254, 28;
     --bs-body-font-weight: 300;
+    --gradient-stops: transparent 0%, var(--color-primary) 50%, var(--color-primary) 100%;
 }
 
 html {
@@ -156,4 +157,81 @@ h6 {
     --bs-border-color: #364153;
     left: -1.5rem;
     bottom: -1.5rem;
+}
+
+#latest-games {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.section-heading:before {
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(to right in oklab, var(--gradient-stops));
+    width: 2rem;
+    height: 2px;
+    left: -40px;
+    top: 50%;
+}
+
+.section-heading::after {
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(to left in oklab, var(--gradient-stops));
+    width: 2rem;
+    height: 2px;
+    right: -40px;
+    top: 50%;
+}
+
+.game {
+    transition: .1s all;
+    border-width: 0;
+}
+
+.game:has(img:hover) {
+    border-width: 2px;
+    border-style: solid;
+}
+
+.game img {
+    transition: .3s all;
+}
+
+.game img:hover {
+    scale: 108%;
+}
+
+.game .gradient {
+    transition: .3s all;
+}
+
+.game:has(img:hover) .gradient {
+    background-image: linear-gradient(to top in oklab, var(--color-primary) 0%, color-mix(in srgb, var(--color-primary) 66%, transparent) 50%, transparent 100%);
+}
+
+.game .game-type {
+    transition: .3s all;
+    top: -2rem;
+    left: 1rem;
+}
+
+.game:has(img:hover) .game-type {
+    top: 1rem;
+}
+
+.game .game-name {
+    transition: .3s all;
+    font-family: var(--font-chakra);
+    transform: translate(0,100%);
+}
+
+.game .game-name h3 {
+    font-family: inherit;
+}
+
+.game:has(img:hover) .game-name {
+    /* top: 1rem; */
+    transform: translate(0,0);
+    
 }

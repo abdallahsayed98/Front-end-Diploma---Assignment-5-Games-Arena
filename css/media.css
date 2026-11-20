@@ -8,6 +8,10 @@
         height: 20rem;
     }
 
+    .gap-sm-4\.5 {
+        gap: 2rem !important;
+    }
+
     #hero h1 {
         font-size: 3rem;
     }
@@ -22,9 +26,21 @@
     .navbar .buttons {
         border: none;
     }
+
     .h-md-24 {
         height: 24rem;
     }
+
+    .mb-md-5\.5 {
+        margin-bottom: 4rem;
+    }
+
+    #latest-games {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+
+
 }
 
 /* lg */
