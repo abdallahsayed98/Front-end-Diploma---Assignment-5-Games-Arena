@@ -40,6 +40,14 @@
         padding-bottom: 6rem;
     }
 
+    .h-md-4 {
+        height: 4rem;
+    }
+
+    .w-md-4 {
+        width: 4rem;
+    }
+
 
 }
 
