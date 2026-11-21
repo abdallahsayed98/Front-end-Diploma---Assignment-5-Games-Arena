@@ -10,6 +10,7 @@
     --bs-light-rgb: var(--color-light);
     --bs-primary-rgb: 203, 254, 28;
     --bs-body-font-weight: 300;
+    --bs-border-color: #1e2939;
     --gradient-stops: transparent 0%, var(--color-primary) 50%, var(--color-primary) 100%;
 }
 
@@ -50,6 +51,14 @@ html {
     height: 16rem;
 }
 
+.h-3 {
+    height: 3rem;
+}
+
+.w-3 {
+    width: 3rem;
+}
+
 h1,
 h2,
 h3,
@@ -67,6 +76,10 @@ h6 {
     opacity: 88%;
 }
 
+.fs-5\.5 {
+    font-size: 1.125rem;
+}
+
 .fs-7 {
     font-size: .875rem;
 }
@@ -75,7 +88,6 @@ h6 {
     --bs-navbar-brand-color: var(--color-primary);
     --bs-navbar-color: var(--bs-body-color);
     --bs-navbar-brand-hover-color: var(--color-primary);
-    --bs-border-color: #1e2939;
     --bs-navbar-active-color: var(--color-primary);
 }
 
@@ -235,3 +247,75 @@ h6 {
     transform: translate(0,0);
     
 }
+
+
+.solution {
+    aspect-ratio: 1/1;
+    transition: .3s all;
+    background-color: #1a1a1a;
+}
+
+.solution:hover {
+    --bs-border-color: var(--color-primary);
+}
+
+.solution::before {
+    content: "";
+    position: absolute;
+    top: -1.5rem;
+    left: -1.5rem;
+    transition: .3s all;
+    height: 0;
+    width: 0;
+    border-top: 24px solid var(--color-primary);
+    border-right: 24px solid #0000;
+}
+
+.solution:hover:not(:has(img))::before {
+    top: 1rem;
+    left: 1rem;
+}
+
+.solution::after {
+    content: "";
+    position: absolute;
+    bottom: -1.5rem;
+    right: -1.5rem;
+    transition: .3s all;
+    height: 0;
+    width: 0;
+    border-bottom: 24px solid var(--color-primary);
+    border-left: 24px solid #0000;
+}
+
+.solution:hover:not(:has(img))::after {
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.solution .icon {
+    background-color: var(--bs-border-color);
+}
+
+.solution:hover i {
+    color: var(--color-dark);
+}
+
+#what-we-do {
+    padding-top: 4rem;
+    padding-bottom: .5rem;
+}
+
+#what-we-do::after {
+    content: "";
+    background: linear-gradient(90deg, transparent, var(--color-primary) 20%, var(--color-primary) 80%, transparent);
+    width: 80%;
+    max-width: 600px;
+    height: 2px;
+    box-shadow: 0 0 10px var(--color-primary), 0 0 20px #cbfe1c4d;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
