@@ -27,6 +27,11 @@ html {
     gap: .75rem;
 }
 
+.px-4\.5 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
 .gap-4\.5 {
     gap: 2rem;
 }
@@ -57,6 +62,14 @@ html {
 
 .w-3 {
     width: 3rem;
+}
+
+.h-6 {
+    height: 6rem;
+}
+
+.w-6 {
+    width: 6rem;
 }
 
 h1,
@@ -235,7 +248,7 @@ h6 {
 .game .game-name {
     transition: .3s all;
     font-family: var(--font-chakra);
-    transform: translate(0,100%);
+    transform: translate(0, 100%);
 }
 
 .game .game-name h3 {
@@ -244,8 +257,8 @@ h6 {
 
 .game:has(img:hover) .game-name {
     /* top: 1rem; */
-    transform: translate(0,0);
-    
+    transform: translate(0, 0);
+
 }
 
 
@@ -319,3 +332,80 @@ h6 {
     transform: translate(-50%);
 }
 
+#sponsors {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.parent-scroll {
+    min-width: max-content
+}
+
+.parent-scrolls::before {
+    content: "";
+    background-image: radial-gradient(in oklab, #caff1cd9 0%, transparent 70%);
+    position: absolute;
+    width: 1200px;
+    height: 350px;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+}
+
+.parent-scroll::before {
+    content: "";
+    background-image: linear-gradient(to right in oklab, #101828 0%, transparent 100%);
+    width: 8rem;
+    z-index: 10;
+    position: absolute;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.parent-scroll::after {
+    content: "";
+    background-image: linear-gradient(to left in oklab, #101828 0%, transparent 100%);
+    width: 8rem;
+    z-index: 10;
+    position: absolute;
+    pointer-events: none;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.sponsor {
+    transition: .15s all;
+}
+
+.scroll-left {
+    animation: 20s linear infinite animate-scroll-left;
+}
+
+.scroll-right {
+    animation: 20s linear infinite animate-scroll-right;
+}
+
+@keyframes animate-scroll-left {
+    0% {
+        transform: translate(0);
+    }
+
+    100% {
+        /* Moves exactly half the total width (the original set + margins) */
+        transform: translate(-50%);
+    }
+}
+
+@keyframes animate-scroll-right {
+    0% {
+        transform: translate(-50%);
+    }
+
+    100% {
+        /* Moves exactly half the total width (the original set + margins) */
+        transform: translate(0);
+    }
+}
