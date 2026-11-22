@@ -72,6 +72,10 @@ html {
     width: 6rem;
 }
 
+.h-20 {
+    height: 20rem;
+}
+
 h1,
 h2,
 h3,
@@ -95,6 +99,10 @@ h6 {
 
 .fs-7 {
     font-size: .875rem;
+}
+
+.fs-8 {
+    font-size: .75rem;
 }
 
 .navbar {
@@ -394,7 +402,6 @@ h6 {
     }
 
     100% {
-        /* Moves exactly half the total width (the original set + margins) */
         transform: translate(-50%);
     }
 }
@@ -405,7 +412,43 @@ h6 {
     }
 
     100% {
-        /* Moves exactly half the total width (the original set + margins) */
         transform: translate(0);
     }
+}
+
+#team-members {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+#team-members h2 {
+    font-size: 3rem;
+}
+
+#team-members .heading-p {
+    font-size: 1.25rem;
+    color: #99a1af;
+    margin-bottom: 4rem;
+}
+
+.rotated-text {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+.member::before {
+    content: "";
+    backdrop-filter: grayscale() brightness(.9);
+    z-index: 1;
+    height: 100%;
+    transition: all .8s cubic-bezier(.4, 0, .2, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(0);
+}
+
+.member:hover::before {
+    transform: translateY(-100%);
 }
