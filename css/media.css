@@ -12,6 +12,11 @@
         gap: 2rem !important;
     }
 
+    .px-sm-4\.5 {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
     #hero h1 {
         font-size: 3rem;
     }
