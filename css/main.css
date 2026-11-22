@@ -9,6 +9,7 @@
     --bs-body-color: var(--color-light);
     --bs-light-rgb: var(--color-light);
     --bs-primary-rgb: 203, 254, 28;
+    --bs-dark-rgb: 11, 14, 19;
     --bs-body-font-weight: 300;
     --bs-border-color: #1e2939;
     --gradient-stops: transparent 0%, var(--color-primary) 50%, var(--color-primary) 100%;
@@ -32,6 +33,10 @@ html {
     padding-right: 1.5rem;
 }
 
+.p-4\.5 {
+    padding: 2rem;
+}
+
 .gap-4\.5 {
     gap: 2rem;
 }
@@ -42,6 +47,10 @@ html {
 
 .mb-4\.5 {
     margin-bottom: 2rem;
+}
+
+.pt-4\.5 {
+    padding-top: 2rem;
 }
 
 .pt-6 {
@@ -62,6 +71,14 @@ html {
 
 .w-3 {
     width: 3rem;
+}
+
+.h-4 {
+    height: 4rem;
+}
+
+.w-4 {
+    width: 4rem;
 }
 
 .h-6 {
@@ -416,16 +433,19 @@ h6 {
     }
 }
 
-#team-members {
+#team-members,
+#contact {
     padding-top: 6rem;
     padding-bottom: 6rem;
 }
 
-#team-members h2 {
+#team-members h2,
+#contact h2 {
     font-size: 3rem;
 }
 
-#team-members .heading-p {
+#team-members .heading-p,
+#contact .heading-p {
     font-size: 1.25rem;
     color: #99a1af;
     margin-bottom: 4rem;
@@ -451,4 +471,63 @@ h6 {
 
 .member:hover::before {
     transform: translateY(-100%);
+}
+
+#contact {
+    background-color: #0E131E;
+}
+
+#contact .info {
+    background-color: var(--bs-border-color);
+}
+
+.info p {
+    color: #99a1af;
+}
+
+.join {
+    background-image: linear-gradient(to right in oklab, var(--color-primary) 0%, #05df72 100%);
+}
+
+.social:hover {
+    --bs-bg-opacity: .8;
+}
+
+.form-control,
+.form-select {
+    --bs-body-bg: #364153;
+    --bs-body-color: var(--color-light);
+    --bs-border-color: #4a5565;
+    padding: .75rem 1rem;
+    border-radius: .5rem;
+}
+
+.form-control::placeholder {
+    --bs-secondary-color: #9499A2;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--color-primary);
+    border-width: 2px;
+    box-shadow: unset;
+}
+
+.form-select {
+    --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+    position: relative;
+}
+
+textarea {
+    resize: none;
+}
+
+.form-check-input {
+    height: 1.25rem;
+    width: 1.25rem;
+    background-color: var(--color-light);
+}
+
+#contact footer {
+    --bs-border-color: #364153;
 }
