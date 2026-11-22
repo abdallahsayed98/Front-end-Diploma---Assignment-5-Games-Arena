@@ -49,6 +49,10 @@ html {
     margin-bottom: 2rem;
 }
 
+.mb-2\.5 {
+    margin-bottom: .75rem;
+}
+
 .pt-4\.5 {
     padding-top: 2rem;
 }
@@ -91,6 +95,14 @@ html {
 
 .h-20 {
     height: 20rem;
+}
+
+.gx-4\.5 {
+    --bs-gutter-x: 2rem;
+}
+
+.gy-4\.5 {
+    --bs-gutter-y: 2rem;
 }
 
 h1,
@@ -530,4 +542,33 @@ textarea {
 
 #contact footer {
     --bs-border-color: #364153;
+}
+
+.footer {
+    padding: 3rem 0;
+}
+
+.text-grey {
+    color: #99a1af;
+}
+
+.footer .footer-social a {
+    min-width: 44px;
+    min-height: 44px;
+}
+
+.footer .footer-social a:hover i {
+    color: var(--color-primary)
+}
+
+.footer ul {
+    list-style-type: none;
+}
+
+.footer ul li:hover a {
+    color: var(--color-primary);
+}
+
+.footer .copyright a:hover {
+    color: var(--color-primary);
 }
