@@ -1,3 +1,10 @@
+@media (max-width: 640px) {
+    button, a {
+        min-width: 44px;
+        min-height: 44px;
+    }
+}
+
 /* sm */
 @media (min-width: 576px) {
     html {
@@ -21,15 +28,49 @@
         font-size: 3rem;
     }
 
-    #hero p {
-        font-size: 1rem;
+    .fs-sm-6 {
+        font-size: 1rem !important;
+    }
+
+    .fs-sm-5 {
+        font-size: 1.25rem !important;
+    }
+
+    .activ-panel {
+        left: -1.5rem;
+        bottom: -1.5rem;
+    }
+
+    .section-heading::before {
+        left: -80px;
+        width: 4rem;
+    }
+
+    .section-heading::after {
+        right: -80px;
+        width: 4rem;
+    }
+
+    .btn-circle {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    #latest-games h2 {
+        font-size: 2.25rem;
+    }
+
+    #what-we-do h2,
+    #what-we-do .subtitle {
+        font-size: 1.875rem;
     }
 }
 
 /* md */
 @media (min-width: 768px) {
-    .navbar .buttons {
-        border: none;
+    html {
+        font-size: 16px;
+        scroll-padding-top: 73px;
     }
 
     .h-md-24 {
@@ -40,9 +81,50 @@
         margin-bottom: 4rem;
     }
 
+    .mb-md-4\.5 {
+        margin-bottom: 2rem;
+    }
+
+    .fs-md-6 {
+        font-size: 1rem !important;
+    }
+
+    .fs-md-5\.5 {
+        font-size: 1.125rem !important;
+    }
+
+    #hero {
+        background-attachment: fixed;
+    }
+
     #latest-games {
         padding-top: 6rem;
         padding-bottom: 6rem;
+    }
+
+    #latest-games h2 {
+        font-size: 3rem;
+    }
+
+    #what-we-do {
+        padding-top: 6rem;
+    }
+
+    #what-we-do h2,
+    #what-we-do .subtitle {
+        font-size: 2.25rem;
+    }
+
+    .solution .icon i {
+        font-size: 1.5rem;
+    }
+
+    .solution h3 {
+        font-size: 1.25rem;
+    }
+
+    .footer {
+        padding: 4rem 0;
     }
 
     .h-md-4 {
@@ -52,28 +134,35 @@
     .w-md-4 {
         width: 4rem;
     }
-
-
 }
 
 /* lg */
 @media (min-width: 992px) {
-    html {
-        font-size: 16px;
+    .navbar .buttons,
+    #nav {
+        border: none;
+    }
+
+    .me-lg-4\.5 {
+        margin-right: 2rem !important;
     }
 
     #hero h1 {
         font-size: 3.75rem;
     }
 
-    .px-lg-4\.5 {
-        padding-left: 2rem;
-        padding-right: 2rem;
+    #what-we-do h2,
+    #what-we-do .subtitle {
+        font-size: 3rem;
     }
 }
 
 /* xl */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    .w-xl-auto {
+        width: auto !important;
+    }
+}
 
 /* xxl */
 @media (min-width: 1400px) {}
