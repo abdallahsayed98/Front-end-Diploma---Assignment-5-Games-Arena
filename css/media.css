@@ -1,0 +1,79 @@
+/* sm */
+@media (min-width: 576px) {
+    html {
+        font-size: 15px;
+    }
+
+    .h-sm-20 {
+        height: 20rem;
+    }
+
+    .gap-sm-4\.5 {
+        gap: 2rem !important;
+    }
+
+    .px-sm-4\.5 {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    #hero h1 {
+        font-size: 3rem;
+    }
+
+    #hero p {
+        font-size: 1rem;
+    }
+}
+
+/* md */
+@media (min-width: 768px) {
+    .navbar .buttons {
+        border: none;
+    }
+
+    .h-md-24 {
+        height: 24rem;
+    }
+
+    .mb-md-5\.5 {
+        margin-bottom: 4rem;
+    }
+
+    #latest-games {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+
+    .h-md-4 {
+        height: 4rem;
+    }
+
+    .w-md-4 {
+        width: 4rem;
+    }
+
+
+}
+
+/* lg */
+@media (min-width: 992px) {
+    html {
+        font-size: 16px;
+    }
+
+    #hero h1 {
+        font-size: 3.75rem;
+    }
+
+    .px-lg-4\.5 {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+/* xl */
+@media (min-width: 1200px) {}
+
+/* xxl */
+@media (min-width: 1400px) {}

@@ -1,0 +1,574 @@
+:root {
+    --color-primary: #cbfe1c;
+    --color-dark: #0b0e13;
+    --color-light: #f1f1f1;
+    --color-black: #0A0D12;
+    --font-chakra: "Chakra Petch", sans-serif;
+    --bs-body-font-family: "Chakra Petch", sans-serif;
+    --bs-body-bg: var(--color-dark);
+    --bs-body-color: var(--color-light);
+    --bs-light-rgb: var(--color-light);
+    --bs-primary-rgb: 203, 254, 28;
+    --bs-dark-rgb: 11, 14, 19;
+    --bs-body-font-weight: 300;
+    --bs-border-color: #1e2939;
+    --gradient-stops: transparent 0%, var(--color-primary) 50%, var(--color-primary) 100%;
+}
+
+html {
+    font-size: 14px;
+}
+
+::selection {
+    background-color: var(--color-primary);
+    color: var(--color-dark);
+}
+
+.gap-2\.5 {
+    gap: .75rem;
+}
+
+.px-4\.5 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.p-4\.5 {
+    padding: 2rem;
+}
+
+.gap-4\.5 {
+    gap: 2rem;
+}
+
+.mt-4\.5 {
+    margin-top: 2rem;
+}
+
+.mb-4\.5 {
+    margin-bottom: 2rem;
+}
+
+.mb-2\.5 {
+    margin-bottom: .75rem;
+}
+
+.pt-4\.5 {
+    padding-top: 2rem;
+}
+
+.pt-6 {
+    padding-top: 7.5rem;
+}
+
+.pb-5\.5 {
+    padding-bottom: 4rem;
+}
+
+.h-64 {
+    height: 16rem;
+}
+
+.h-3 {
+    height: 3rem;
+}
+
+.w-3 {
+    width: 3rem;
+}
+
+.h-4 {
+    height: 4rem;
+}
+
+.w-4 {
+    width: 4rem;
+}
+
+.h-6 {
+    height: 6rem;
+}
+
+.w-6 {
+    width: 6rem;
+}
+
+.h-20 {
+    height: 20rem;
+}
+
+.gx-4\.5 {
+    --bs-gutter-x: 2rem;
+}
+
+.gy-4\.5 {
+    --bs-gutter-y: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Days One", sans-serif;
+}
+
+.bg-black {
+    background-color: var(--color-dark);
+}
+
+.opacity-88 {
+    opacity: 88%;
+}
+
+.fs-5\.5 {
+    font-size: 1.125rem;
+}
+
+.fs-7 {
+    font-size: .875rem;
+}
+
+.fs-8 {
+    font-size: .75rem;
+}
+
+.navbar {
+    --bs-navbar-brand-color: var(--color-primary);
+    --bs-navbar-color: var(--bs-body-color);
+    --bs-navbar-brand-hover-color: var(--color-primary);
+    --bs-navbar-active-color: var(--color-primary);
+}
+
+.btn {
+    --bs-btn-padding-x: 1.5rem;
+    --bs-btn-padding-y: 0.75rem;
+    --bs-border-width: 2px
+}
+
+.btn-primary {
+    --bs-btn-color: var(--color-dark);
+    --bs-btn-bg: var(--color-primary);
+    --bs-btn-border-color: var(--color-primary);
+    --bs-btn-hover-color: var(--color-dark);
+    --bs-btn-hover-bg: var(--color-primary);
+    --bs-btn-hover-border-color: var(--color-primary);
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: var(--color-dark);
+    --bs-btn-active-bg: var(--color-primary);
+    --bs-btn-active-border-color: var(--color-primary);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.btn-outline-primary {
+    --bs-btn-color: var(--color-primary);
+    --bs-btn-border-color: var(--color-primary);
+    --bs-btn-hover-color: var(--color-dark);
+    --bs-btn-hover-bg: var(--color-primary);
+    --bs-btn-hover-border-color: var(--color-primary);
+    --bs-btn-focus-shadow-rgb: 13, 110, 253;
+    --bs-btn-active-color: var(--color-dark);
+    --bs-btn-active-bg: var(--color-primary);
+    --bs-btn-active-border-color: var(--color-primary);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--color-primary);
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: var(--color-primary);
+    --bs-gradient: none;
+}
+
+.navbar button i {
+    font-size: 1.125rem;
+}
+
+.navbar button:not(:last-child) {
+    margin-bottom: 0.75rem;
+}
+
+.navbar button i:hover {
+    color: var(--color-primary);
+}
+
+.navbar .buttons {
+    border-top: 1px solid var(--bs-border-color);
+}
+
+.navbar-nav {
+    --bs-nav-link-hover-color: var(--color-primary);
+}
+
+.navbar-toggler:hover {
+    box-shadow: none;
+    color: var(--color-primary);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+#hero h1 {
+    font-size: 2.25rem;
+}
+
+#hero p {
+    color: #d1d5dc;
+}
+
+.activ-panel {
+    --bs-border-color: #364153;
+    left: -1.5rem;
+    bottom: -1.5rem;
+}
+
+#latest-games {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.section-heading:before {
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(to right in oklab, var(--gradient-stops));
+    width: 2rem;
+    height: 2px;
+    left: -40px;
+    top: 50%;
+}
+
+.section-heading::after {
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(to left in oklab, var(--gradient-stops));
+    width: 2rem;
+    height: 2px;
+    right: -40px;
+    top: 50%;
+}
+
+.game {
+    transition: .1s all;
+    border-width: 0;
+}
+
+.game:has(img:hover) {
+    border-width: 2px;
+    border-style: solid;
+}
+
+.game img {
+    transition: .3s all;
+}
+
+.game img:hover {
+    scale: 108%;
+}
+
+.game .gradient {
+    transition: .3s all;
+}
+
+.game:has(img:hover) .gradient {
+    background-image: linear-gradient(to top in oklab, var(--color-primary) 0%, color-mix(in srgb, var(--color-primary) 66%, transparent) 50%, transparent 100%);
+}
+
+.game .game-type {
+    transition: .3s all;
+    top: -2rem;
+    left: 1rem;
+}
+
+.game:has(img:hover) .game-type {
+    top: 1rem;
+}
+
+.game .game-name {
+    transition: .3s all;
+    font-family: var(--font-chakra);
+    transform: translate(0, 100%);
+}
+
+.game .game-name h3 {
+    font-family: inherit;
+}
+
+.game:has(img:hover) .game-name {
+    /* top: 1rem; */
+    transform: translate(0, 0);
+
+}
+
+
+.solution {
+    aspect-ratio: 1/1;
+    transition: .3s all;
+    background-color: #1a1a1a;
+}
+
+.solution:hover {
+    --bs-border-color: var(--color-primary);
+}
+
+.solution::before {
+    content: "";
+    position: absolute;
+    top: -1.5rem;
+    left: -1.5rem;
+    transition: .3s all;
+    height: 0;
+    width: 0;
+    border-top: 24px solid var(--color-primary);
+    border-right: 24px solid #0000;
+}
+
+.solution:hover:not(:has(img))::before {
+    top: 1rem;
+    left: 1rem;
+}
+
+.solution::after {
+    content: "";
+    position: absolute;
+    bottom: -1.5rem;
+    right: -1.5rem;
+    transition: .3s all;
+    height: 0;
+    width: 0;
+    border-bottom: 24px solid var(--color-primary);
+    border-left: 24px solid #0000;
+}
+
+.solution:hover:not(:has(img))::after {
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.solution .icon {
+    background-color: var(--bs-border-color);
+}
+
+.solution:hover i {
+    color: var(--color-dark);
+}
+
+#what-we-do {
+    padding-top: 4rem;
+    padding-bottom: .5rem;
+}
+
+#what-we-do::after {
+    content: "";
+    background: linear-gradient(90deg, transparent, var(--color-primary) 20%, var(--color-primary) 80%, transparent);
+    width: 80%;
+    max-width: 600px;
+    height: 2px;
+    box-shadow: 0 0 10px var(--color-primary), 0 0 20px #cbfe1c4d;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#sponsors {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.parent-scroll {
+    min-width: max-content
+}
+
+.parent-scrolls::before {
+    content: "";
+    background-image: radial-gradient(in oklab, #caff1cd9 0%, transparent 70%);
+    position: absolute;
+    width: 1200px;
+    height: 350px;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+}
+
+.parent-scroll::before {
+    content: "";
+    background-image: linear-gradient(to right in oklab, #101828 0%, transparent 100%);
+    width: 8rem;
+    z-index: 10;
+    position: absolute;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.parent-scroll::after {
+    content: "";
+    background-image: linear-gradient(to left in oklab, #101828 0%, transparent 100%);
+    width: 8rem;
+    z-index: 10;
+    position: absolute;
+    pointer-events: none;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.sponsor {
+    transition: .15s all;
+}
+
+.scroll-left {
+    animation: 20s linear infinite animate-scroll-left;
+}
+
+.scroll-right {
+    animation: 20s linear infinite animate-scroll-right;
+}
+
+@keyframes animate-scroll-left {
+    0% {
+        transform: translate(0);
+    }
+
+    100% {
+        transform: translate(-50%);
+    }
+}
+
+@keyframes animate-scroll-right {
+    0% {
+        transform: translate(-50%);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+#team-members,
+#contact {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+#team-members h2,
+#contact h2 {
+    font-size: 3rem;
+}
+
+#team-members .heading-p,
+#contact .heading-p {
+    font-size: 1.25rem;
+    color: #99a1af;
+    margin-bottom: 4rem;
+}
+
+.rotated-text {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+.member::before {
+    content: "";
+    backdrop-filter: grayscale() brightness(.9);
+    z-index: 1;
+    height: 100%;
+    transition: all .8s cubic-bezier(.4, 0, .2, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(0);
+}
+
+.member:hover::before {
+    transform: translateY(-100%);
+}
+
+#contact {
+    background-color: #0E131E;
+}
+
+#contact .info {
+    background-color: var(--bs-border-color);
+}
+
+.info p {
+    color: #99a1af;
+}
+
+.join {
+    background-image: linear-gradient(to right in oklab, var(--color-primary) 0%, #05df72 100%);
+}
+
+.social:hover {
+    --bs-bg-opacity: .8;
+}
+
+.form-control,
+.form-select {
+    --bs-body-bg: #364153;
+    --bs-body-color: var(--color-light);
+    --bs-border-color: #4a5565;
+    padding: .75rem 1rem;
+    border-radius: .5rem;
+}
+
+.form-control::placeholder {
+    --bs-secondary-color: #9499A2;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--color-primary);
+    border-width: 2px;
+    box-shadow: unset;
+}
+
+.form-select {
+    --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+    position: relative;
+}
+
+textarea {
+    resize: none;
+}
+
+.form-check-input {
+    height: 1.25rem;
+    width: 1.25rem;
+    background-color: var(--color-light);
+}
+
+#contact footer {
+    --bs-border-color: #364153;
+}
+
+.footer {
+    padding: 3rem 0;
+}
+
+.text-grey {
+    color: #99a1af;
+}
+
+.footer .footer-social a {
+    min-width: 44px;
+    min-height: 44px;
+}
+
+.footer .footer-social a:hover i {
+    color: var(--color-primary)
+}
+
+.footer ul {
+    list-style-type: none;
+}
+
+.footer ul li:hover a {
+    color: var(--color-primary);
+}
+
+.footer .copyright a:hover {
+    color: var(--color-primary);
+}
